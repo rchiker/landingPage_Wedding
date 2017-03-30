@@ -1,0 +1,29 @@
+.navbar {
+    background: $body-bg;
+
+
+
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    margin-top: -17px;
+
+    li.active a,
+    a:hover {
+        color: $text-color;
+        background: #E2E2E2;
+    }
+
+    .navbar-brand-image {
+        width: auto;
+        height: 55px;
+    }
+
+    .icon-bar {
+        background: $text-color;
+    }
+    .entete {
+        color :orange;
+        margin-left: 390px;
+        font-family: "Edwardian Script";
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,58 @@
+.hero {
+    position: relative;
+    height: 1000px;
+    background: url('../assets/images/hero/back.png') no-repeat center top;
+    background-size: 100% auto;
+    background-attachment: fixed;
+
+    text-align: center;
+
+    @media screen and (min-width: 1630px) {
+        background-size: auto 100% ;
+    }
+
+    .hero-container {
+        margin: 135px 0;
+    }
+
+    .hero-title {
+        color: #000;
+
+        font-family: $header-font;
+
+        text-transform: uppercase;
+    }
+
+    .hero-title-l1 {
+        font-size: 65px;
+    }
+
+    .hero-title-l2 {
+        margin-top: 10px;
+
+        font-size: 28px;
+    }
+
+    .hero-title-highlight {
+        color: $brand-primary;
+    }
+
+    .hero-buttons {
+        margin-top: 50px;
+
+        input {
+            width: 300px;
+            height: 40px;
+
+            padding: 0 15px;
+
+            line-height: 40px;
+        }
+
+        .btn-default {
+            height: 40px;
+
+            padding: 0 15px;
+        }
+    }
+}
