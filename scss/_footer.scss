@@ -1,6 +1,6 @@
 .footer {
     $footer-col-list-height: 30px;
-    height: 1000px;
+    height: 500px;
 
     background: url('../assets/images/footer/footer.png') no-repeat center top;
     background-size: 100% auto;
@@ -13,6 +13,7 @@
     .footer-col {
         color: $body-bg;
         margin-bottom: 500px;
+        //margin-left: 550px;
 
         @media screen and (min-width: $screen-md+1) {
             height: 200px;
@@ -30,6 +31,15 @@
     }
 
     .footer-col-title {
+        text-align: left;
+        color: #000;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .footer-col-titleBot {
+        text-align: right;
         color: #000;
         font-size: 20px;
         font-weight: 700;
@@ -44,15 +54,51 @@
         margin-top: 35px;
     }
 
-    .footer-col-list {
+    .footer-col-listBot {
         padding: 0;
-
+        text-align: right;
         list-style: none;
         color: black;
 
 
         li {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
+
+            line-height: $footer-col-list-height;
+
+            //transition-duration: $default-transition-duration;
+            cursor: pointer;
+
+            a {
+                color: black;
+            }
+
+            &:hover {
+                color: $brand-primary;
+
+                a {
+                    color: $brand-primary;
+                }
+
+                .footer-col-list-icon {
+                    color: $body-bg;
+                    background: $brand-primary;
+
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+    .footer-col-list {
+        padding: 0;
+        text-align: left;
+        list-style: none;
+        color: black;
+
+
+        li {
+            margin-bottom: 5px;
 
             line-height: $footer-col-list-height;
 
@@ -96,8 +142,25 @@
         }
     }
 
+    .footer-col-list-iconBot {
+        text-align: right;
+        margin-right: 5px;
+
+        border: 1px solid $body-bg;
+
+        font-size: 14px;
+
+        transition-duration: $default-transition-duration;
+
+        @include icon-radius($footer-col-list-height);
+
+        .fa {
+            top: -1px;
+        }
+    }
+
     .footer-copyright {
-        margin-top: 70px;
+        margin-top: -350px;
 
         font-size: 12px;
         text-align: center;

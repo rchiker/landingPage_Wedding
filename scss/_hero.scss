@@ -1,6 +1,6 @@
 .hero {
     position: relative;
-    height: 1000px;
+    height: 500px;
     background: url('../assets/images/hero/back.png') no-repeat center top;
     background-size: 100% auto;
     background-attachment: fixed;
@@ -24,13 +24,22 @@
     }
 
     .hero-title-l1 {
-        font-size: 65px;
+        font-size: 75px;
+        color: orange;
+        font-family: "Brush Script MT";
+        background-image: url('../assets/images/back_title.png') ;
+        opacity: 0.75;
     }
 
-    .hero-title-l2 {
-        margin-top: 10px;
 
-        font-size: 28px;
+    .hero-title-l2 {
+        //padding-right: 850px;
+        text-align: left;
+        margin-top: -23px;
+        font-family: "Brush Script MT";
+
+        font-size: 20px;
+        color: orange;
     }
 
     .hero-title-highlight {
@@ -56,3 +65,4 @@
         }
     }
 }
+

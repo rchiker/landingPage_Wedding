@@ -2,23 +2,26 @@
     background: $body-bg;
 
 
-
+    .nav {
+        margin-top: 15px;
+    }
     box-shadow: 0 0 10px rgba(0,0,0,.1);
     margin-top: -17px;
 
     li.active a,
     a:hover {
-        color: $text-color;
+        color: orange;
         background: #E2E2E2;
     }
 
     .navbar-brand-image {
         width: auto;
-        height: 55px;
+        background-image: none;
+        height: 50px;
     }
 
     .icon-bar {
-        background: $text-color;
+        background: orange;
     }
     .entete {
         color :orange;
